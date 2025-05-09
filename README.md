@@ -54,7 +54,7 @@ Namun:
 - ❌ Dilarang menggunakan data dari proyek ini untuk tujuan komersial tanpa izin tertulis.
 - 🛡️ Segala bentuk penyalahgunaan atau pelanggaran privasi data akan dikenakan tindakan sesuai peraturan yang berlaku.
 
-**Hak Cipta © 2025 Hajirin Arafat (LyAmurus)**  
+**Hak Cipta © 2025 Mulyadi (LyAmurus)**  
 *All rights reserved.*
 
 
