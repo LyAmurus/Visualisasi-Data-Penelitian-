@@ -15,9 +15,8 @@
 
 ## 🛠️ Teknologi yang Digunakan
 
-- 📊 **Chart.js / D3.js** *(atau sesuai yang kamu pakai)*
+- 📊 **Chart.js / D3.js** 
 - 💻 **HTML, CSS, JavaScript**
-- 📁 **Node.js / Python** *(opsional, jika ada backend)*
 
 ---
 
@@ -25,7 +24,7 @@
 
 - Interaktif visualisasi data
 - Tampilan modern dan responsif
-- Pengolahan data otomatis
+- Pengolahan data 
 - Export hasil visualisasi
 
 ---
