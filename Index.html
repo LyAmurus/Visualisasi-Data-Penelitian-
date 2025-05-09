@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visualisasi Data Penelitian</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Visualisasi Data Penelitian</h1>
+    <p>Pemaparan data hasil kuesioner dan pengujian UEQ pada prototipe desain</p>
+  </header>
+
+  <section>
+    <h2>Deskripsi Singkat Data</h2>
+    <p>Data ini dikumpulkan dari responden pengguna remaja (usia 12-24 tahun) melalui kuesioner daring. Validasi dilakukan menggunakan metode UEQ (User Experience Questionnaire).</p>
+  </section>
+
+  <section>
+    <h2>Diagram Lingkaran Gender</h2>
+    <canvas id="genderChart"></canvas>
+  </section>
+
+  <section>
+    <h2>Diagram Batang Tahun ke Tahun</h2>
+    <canvas id="mentalHealthChart"></canvas>
+  </section>
+
+  <section>
+    <h2>Spreadsheet Hasil Kuesioner</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Usia</th>
+          <th>Gender</th>
+          <th>Respons UEQ (Skala 1-7)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ani</td>
+          <td>19</td>
+          <td>Perempuan</td>
+          <td>5.8</td>
+        </tr>
+        <tr>
+          <td>Budi</td>
+          <td>21</td>
+          <td>Laki-laki</td>
+          <td>6.2</td>
+        </tr>
+        <tr>
+          <td>Citra</td>
+          <td>22</td>
+          <td>Perempuan</td>
+          <td>5.5</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Kesimpulan UEQ</h2>
+    <p>Rata-rata skor pengalaman pengguna dari UEQ berada pada nilai 5.83, menunjukkan bahwa desain prototipe dianggap menyenangkan, mudah digunakan, dan efisien oleh mayoritas responden.</p>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
