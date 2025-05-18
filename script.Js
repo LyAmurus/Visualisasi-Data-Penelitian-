@@ -60,3 +60,4 @@ const mentalHealthChart = new Chart(ctxMental, {
     }
   }
 });
+

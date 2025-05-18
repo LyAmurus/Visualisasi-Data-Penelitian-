@@ -1,0 +1,131 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #2d9cdb;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  margin-left: 240px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+header {
+  background-color: #2d9cdb;
+  padding: 30px;
+  color: white;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.profile-info h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  color: #2d9cdb;
+}
+
+.profile-info p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+section {
+  margin-bottom: 30px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #2d9cdb;
+}
+
+canvas {
+  max-width: 100%;
+  margin: 0 auto 20px;
+  display: block;
+  height: auto;
+}
+
+#mentalHealthChart {
+  height: 400px;
+  width: 100%;
+}
+
+table { 
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #e3f2fd;
+}
