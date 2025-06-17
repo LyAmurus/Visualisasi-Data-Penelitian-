@@ -15,8 +15,8 @@
     <ul>
       <li><a href="#overview">Overview Penelitian</a></li>
       <li><a href="#persona">Persona Pengguna</a></li>
-      <li><a href="#journey">User Journey Mapping</a></li>
-      <li><a href="#wireframe">Wireframe & Prototype</a></li>
+      <li><a href="#journey">User Expected</a></li>
+      <li><a href="#mockup">MockUp</a></li>
       <li><a href="#hasil">Hasil Data & Analisis</a></li>
       <li><a href="#insight">Key Findings & Insight</a></li>
       <li><a href="#kesimpulan">Kesimpulan & Next Steps</a></li>
@@ -42,11 +42,12 @@
 
     <section id="overview">
       <h2>Deskripsi Singkat Data</h2>
-      <p>Data ini dikumpulkan dari responden pengguna remaja (usia 12–24 tahun) melalui kuesioner daring. Validasi dilakukan menggunakan metode UEQ (User Experience Questionnaire).</p>
+      <p>Data dikumpulkan dari remaja usia 12–24 tahun. Validasi menggunakan metode User Experience Questionnaire (UEQ) dan Cognitive Walkthrough.</p>
     </section>
 
     <section id="hasil">
-      <h2>Diagram Lingkaran Gender</h2>
+      <h2>Gander Total - Responden Remaja</h2>
+      <a class="spreadsheet-link" href="" target="_blank">Lihat Selengkapnya disini</a>
       <canvas id="genderChart"></canvas>
     </section>
 
@@ -56,80 +57,73 @@
     </section>
 
     <section>
-      <h2>Hasil Uji Testing - User Experience Questionnaire</h2>
+      <h2>Hasil Uji Testing - UEQ + Cognitive Walkthrough</h2>
       <table>
         <thead>
           <tr>
             <th>Nama</th>
-            <th>Usia</th>
-            <th>Gender</th>
-            <th>Score Hasil Testing - Cognitive Walkthrough Skala 1-4</th>
+            <th>Status</th>
+            <th>Score CW</th>
+            <th>Persentase</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Ani</td>
-            <td>19</td>
-            <td>Perempuan</td>
-            <td>3.5 - Mudah Dipahami</td>
-          </tr>
-          <tr>
-            <td>Budi</td>
-            <td>21</td>
-            <td>Laki-laki</td>
-            <td>4 - Tidak Ada Masalah</td>
-          </tr>
-          <tr>
-            <td>Citra</td>
-            <td>22</td>
-            <td>Perempuan</td>
-            <td>3.5 - Mudah Dipahami</td>
-          </tr>
-          <tr>
-            <td>Alex</td>
-            <td>20</td>
-            <td>Laki-laki</td>
-            <td>3 - Sedikit Dapat Dipahami</td>
-          </tr>
-          <tr>
-            <td>Kevin</td>
-            <td>23</td>
-            <td>Laki-laki</td>
-            <td>3.5 - Mudah Dipahami</td>
-          </tr>
-          <tr>
-            <td>Hyslyen</td>
-            <td>21</td>
-            <td>Perempuan</td>
-            <td>4 - Tidak Ada Masalah</td>
-          </tr>
+          <tr><td>Haikal Azka Raffasya</td><td>Mahasiswa</td><td>6</td><td>86%</td></tr>
+          <tr><td>Anjeli Gusnawan</td><td>Mahasiswa</td><td>6</td><td>86%</td></tr>
+          <tr><td>Tiara Sekar Ayuningtyas</td><td>Siswa</td><td>7</td><td>100%</td></tr>
+          <tr><td>Shakira Nur Azizah</td><td>Siswa</td><td>4.5</td><td>64%</td></tr>
+          <tr><td>Dhafin Rizky Aulia</td><td>Mahasiswa</td><td>7</td><td>100%</td></tr>
+          <tr><td>Alfhiyana</td><td>Mahasiswa</td><td>7</td><td>100%</td></tr>
+          <tr><td>Najwa Mutiara Salsabila</td><td>Siswa</td><td>6</td><td>86%</td></tr>
+          <tr><td>Raka Ilhami Pradana</td><td>Siswa</td><td>6</td><td>86%</td></tr>
+          <tr><td>Elga Syahira</td><td>Mahasiswa</td><td>5.5</td><td>79%</td></tr>
+          <tr><td>Syifa Inas Luthfiya</td><td>Mahasiswa</td><td>5.5</td><td>79%</td></tr>
+          <tr><td>Gita Nuras Lestari</td><td>Mahasiswa</td><td>6.5</td><td>93%</td></tr>            
         </tbody>
       </table>
+      <a class="spreadsheet-link" href="https://docs.google.com/spreadsheets/d/11YtBXv7qLVzomkPYSp8DWYVfPZ8fSxn2z2ZuGAvi8XA/edit?usp=sharing" target="_blank">Lihat Selengkapnya di Spreadsheet</a>
     </section>
 
-    <section id="insight">
-      <h2>Kesimpulan UEQ - Cognitive Walkthrough</h2>
-      <p>Rata-rata skor pengalaman pengguna dari UEQ berada pada nilai 5.83, menunjukkan bahwa desain prototipe dianggap menyenangkan, mudah digunakan, dan efisien oleh mayoritas responden.</p>
+    <section>
+      <h2>User Experience Questionnaire – Likert 5 (6 Aspek)</h2>
+      <canvas id="ueqChart"></canvas>
     </section>
 
     <section id="persona">
       <h2>Persona Pengguna</h2>
-      <p>(Konten persona pengguna akan ditambahkan di sini)</p>
+      <div class="persona-container">
+        <img src="Persona1.png" alt="Persona 1">
+        <img src="Persona2.png" alt="Persona 2">
+        <p>Persona berikut disusun berdasarkan hasil wawancara langsung dengan dua responden dari kategori siswa dan mahasiswa yang memiliki pengalaman nyata dalam menghadapi tantangan kesehatan mental. Proses wawancara dilakukan secara langsung di RSUD Cilegon sebagai bagian dari kegiatan penelitian eksploratif untuk memahami kebutuhan emosional dan preferensi pengguna dalam memanfaatkan aplikasi digital sebagai dukungan terhadap kesehatan mental.
+           Untuk menjaga privasi dan menjunjung tinggi etika penelitian, seluruh nama dan informasi identitas telah disamarkan menggunakan nama samaran, tanpa mengubah esensi dari pengalaman, tujuan, maupun tantangan yang disampaikan oleh responden.
+           persona ini digunakan sebagai dasar dalam merancang solusi desain yang empatik, kontekstual, dan relevan dengan kehidupan pengguna sebenarnya.</p>
+      </div>
     </section>
 
     <section id="journey">
-      <h2>User Journey Mapping</h2>
-      <p>(Konten user journey mapping akan ditambahkan di sini)</p>
+      <h2>User Expected</h2>
+      <ul>
+        <li>Aplikasi mudah digunakan di perangkat mobile</li>
+        <li>Tampilan simpel dan informatif</li>
+        <li>Cepat dalam memberikan informasi kesehatan mental</li>
+        <li>Privasi data pengguna terjaga</li>
+        <li>Dilengkapi fitur edukasi dan konsultasi ringan</li>
+      </ul>
     </section>
 
-    <section id="wireframe">
-      <h2>Wireframe & Prototype</h2>
-      <p>(Gambar mockup dan penjelasan wireframe akan ditampilkan di sini)</p>
+    <section id="mockup">
+      <h2>MockUp</h2>
+      <img src="Mockup.png" alt="Mockup 1" style="max-width: 100%; border-radius: 8px;">
+    </section>
+
+    <section id="insight">
+      <h2>Key Findings & Insight</h2>
+      <p>Hasil menunjukkan pengalaman pengguna berada dalam rentang positif pada semua aspek UEQ dengan rata-rata di atas 4 dari skala 5.</p>
     </section>
 
     <section id="kesimpulan">
       <h2>Kesimpulan dan Next Steps</h2>
-      <p>(Kesimpulan akhir dan langkah berikutnya akan dijelaskan di sini)</p>
+      <p>Aplikasi menunjukkan potensi tinggi dalam membantu remaja mengakses edukasi dan informasi kesehatan mental. Langkah selanjutnya adalah pengujian lebih lanjut dan penyempurnaan desain berdasarkan masukan pengguna.</p>
     </section>
 
   </main>

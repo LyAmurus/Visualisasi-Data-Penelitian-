@@ -102,15 +102,39 @@ h2 {
 }
 
 canvas {
-  max-width: 100%;
-  margin: 0 auto 20px;
   display: block;
-  height: auto;
+  margin: 0 auto 20px;
 }
 
-#mentalHealthChart {
-  height: 400px;
+#mentalHealthChart,
+#genderChart,
+#ueqChart {
+  max-width: 800px;
   width: 100%;
+  height: 400px !important;
+  margin: 0 auto 20px;
+}
+
+#mockup img {
+  display: block;
+  margin: 0 auto;
+  max-width: 70%;
+  border-radius: 8px;
+}
+
+.persona-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.persona-container img {
+  width: 800px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
 }
 
 table { 

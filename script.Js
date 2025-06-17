@@ -1,37 +1,50 @@
+// Chart Bar - Gender (Ganti dari Pie ke Bar)
 const ctxGender = document.getElementById('genderChart').getContext('2d');
 const genderChart = new Chart(ctxGender, {
-  type: 'pie',
+  type: 'bar',
   data: {
-    labels: ['Perempuan', 'Laki-laki'],
+    labels: ['Laki-Laki', 'Perempuan'],
     datasets: [{
       label: 'Distribusi Gender',
-      data: [2, 1],
-      backgroundColor: [
-        '#ec407a',
-        '#42a5f5'
-      ],
-      borderColor: '#fff',
-      borderWidth: 2
+      data: [42, 54],
+      backgroundColor: ['#42A5F5', '#EC407A'],
+      borderRadius: 6
     }]
   },
   options: {
     responsive: true,
+    scales: {
+      y: {
+        beginAtZero: true,
+        title: {
+          display: true,
+          text: 'Jumlah Responden'
+        }
+      },
+      x: {
+        title: {
+          display: true,
+          text: 'Jenis Kelamin'
+        }
+      }
+    },
     plugins: {
       legend: {
-        position: 'bottom',
-      },
+        display: false
+      }
     }
   }
 });
 
+// Chart Bar - Jumlah Responden UEQ, CW, UE Mahasiswa IT
 const ctxMental = document.getElementById('mentalHealthChart').getContext('2d');
 const mentalHealthChart = new Chart(ctxMental, {
   type: 'bar',
   data: {
-    labels: ['2019', '2020', '2021', '2022', '2023'],
+    labels: ['UEQ (Likert 5)', 'Cognitive Walkthrough', 'UE - Mahasiswa IT'],
     datasets: [{
-      label: 'Jumlah Remaja Mengalami Masalah Mental',
-      data: [10, 25, 40, 35, 50],
+      label: 'Jumlah Responden',
+      data: [45, 45, 20],
       backgroundColor: '#2d9cdb',
       borderRadius: 6
     }]
@@ -49,7 +62,7 @@ const mentalHealthChart = new Chart(ctxMental, {
       x: {
         title: {
           display: true,
-          text: 'Tahun'
+          text: 'Jenis Pengujian'
         }
       }
     },
@@ -61,3 +74,33 @@ const mentalHealthChart = new Chart(ctxMental, {
   }
 });
 
+// Chart Radar - UEQ 6 Aspek (Likert 5)
+document.addEventListener("DOMContentLoaded", function () {
+  const ctxUEQ = document.getElementById('ueqChart');
+  if (ctxUEQ) {
+    new Chart(ctxUEQ, {
+      type: 'radar',
+      data: {
+        labels: ['Attractiveness', 'Perspicuity', 'Efficiency', 'Dependability', 'Stimulation', 'Novelty'],
+        datasets: [{
+          label: 'Rata-rata Skor UEQ (1-5)',
+          data: [4.2, 4.4, 4.0, 4.1, 4.3, 4.5],
+          backgroundColor: 'rgba(45, 156, 219, 0.2)',
+          borderColor: '#2d9cdb',
+          pointBackgroundColor: '#2d9cdb'
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          r: {
+            beginAtZero: true,
+            min: 0,
+            max: 5,
+            ticks: { stepSize: 1 }
+          }
+        }
+      }
+    });
+  }
+});
