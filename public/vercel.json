@@ -1,4 +1,0 @@
-{
-  "cleanUrls": true,
-  "rewrites": [{ "source": "/public/", "destination": "/public/Index.html" }]
-}
