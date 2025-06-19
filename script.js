@@ -1,4 +1,4 @@
-// Chart Bar - Gender (Ganti dari Pie ke Bar)
+// Gender Chart
 const ctxGender = document.getElementById('genderChart').getContext('2d');
 const genderChart = new Chart(ctxGender, {
   type: 'bar',
@@ -6,7 +6,7 @@ const genderChart = new Chart(ctxGender, {
     labels: ['Laki-Laki', 'Perempuan'],
     datasets: [{
       label: 'Distribusi Gender',
-      data: [42, 54],
+      data: [48, 42],
       backgroundColor: ['#42A5F5', '#EC407A'],
       borderRadius: 6
     }]
@@ -16,27 +16,17 @@ const genderChart = new Chart(ctxGender, {
     scales: {
       y: {
         beginAtZero: true,
-        title: {
-          display: true,
-          text: 'Jumlah Responden'
-        }
+        title: { display: true, text: 'Jumlah Responden' }
       },
       x: {
-        title: {
-          display: true,
-          text: 'Jenis Kelamin'
-        }
+        title: { display: true, text: 'Jenis Kelamin' }
       }
     },
-    plugins: {
-      legend: {
-        display: false
-      }
-    }
+    plugins: { legend: { display: false } }
   }
 });
 
-// Chart Bar - Jumlah Responden UEQ, CW, UE Mahasiswa IT
+// Mental Health Chart
 const ctxMental = document.getElementById('mentalHealthChart').getContext('2d');
 const mentalHealthChart = new Chart(ctxMental, {
   type: 'bar',
@@ -44,7 +34,7 @@ const mentalHealthChart = new Chart(ctxMental, {
     labels: ['UEQ (Likert 5)', 'Cognitive Walkthrough', 'UE - Mahasiswa IT'],
     datasets: [{
       label: 'Jumlah Responden',
-      data: [45, 45, 20],
+      data: [61, 77, 30],
       backgroundColor: '#2d9cdb',
       borderRadius: 6
     }]
@@ -52,29 +42,15 @@ const mentalHealthChart = new Chart(ctxMental, {
   options: {
     responsive: true,
     scales: {
-      y: {
-        beginAtZero: true,
-        title: {
-          display: true,
-          text: 'Jumlah Responden'
-        }
-      },
-      x: {
-        title: {
-          display: true,
-          text: 'Jenis Pengujian'
-        }
-      }
+      y: { beginAtZero: true, title: { display: true, text: 'Jumlah Responden' } },
+      x: { title: { display: true, text: 'Jenis Pengujian' } }
     },
-    plugins: {
-      legend: {
-        display: false
-      }
-    }
+    plugins: { legend: { display: false } }
   }
 });
 
-// Chart Radar - UEQ 6 Aspek (Likert 5)
+// UEQ Radar Chart & Expected Chart
+
 document.addEventListener("DOMContentLoaded", function () {
   const ctxUEQ = document.getElementById('ueqChart');
   if (ctxUEQ) {
@@ -98,6 +74,40 @@ document.addEventListener("DOMContentLoaded", function () {
             min: 0,
             max: 5,
             ticks: { stepSize: 1 }
+          }
+        }
+      }
+    });
+  }
+
+  // Expected Chart
+   const ctxExpected = document.getElementById('expectedChart');
+  if (ctxExpected) {
+    new Chart(ctxExpected, {
+      type: 'bar',
+      data: {
+        labels: [
+          'Mood Tracker (90%)',
+          'Chat Konseling (73%)',
+          'Self Care (63%)',
+          'Journaling List (63%)',
+          'Forum Remaja (50%)',
+          'Pengingat Aktivitas Positif (43%)'
+        ],
+        datasets: [{
+          label: 'Jumlah Pemilih (30 responden)',
+          data: [27, 22, 19, 19, 15, 13],
+          backgroundColor: '#66bb6a',
+          borderRadius: 6
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        scales: {
+          x: {
+            beginAtZero: true,
+            max: 30,
+            ticks: { stepSize: 5 }
           }
         }
       }

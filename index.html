@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
 
@@ -42,17 +43,17 @@
 
     <section id="overview">
       <h2>Deskripsi Singkat Data</h2>
-      <p>Data dikumpulkan dari remaja usia 12–24 tahun. Validasi menggunakan metode User Experience Questionnaire (UEQ) dan Cognitive Walkthrough.</p>
+      <p>Data yang divisualisasikan pada laman ini dikumpulkan dari responden remaja berusia antara 12 hingga 24 tahun. Pengumpulan data dilakukan melalui instrumen evaluasi berbasis User Experience Questionnaire (UEQ) dan Cognitive Walkthrough yang dirancang untuk menilai sejauh mana rancangan antarmuka aplikasi kesehatan mental ini mampu memberikan pengalaman pengguna yang baik serta kemudahan dalam navigasi. Seluruh data yang ditampilkan merupakan hasil olahan dari partisipasi responden terhadap prototipe antarmuka yang dikembangkan dengan pendekatan preventif sesuai kebutuhan remaja.</p>
     </section>
 
     <section id="hasil">
       <h2>Gander Total - Responden Remaja</h2>
-      <a class="spreadsheet-link" href="" target="_blank">Lihat Selengkapnya disini</a>
+      <a class="spreadsheet-link" href="https://docs.google.com/spreadsheets/d/1_xqg987E8q4GtfxXtCIuuJaaLyZeSLP-aC4dzpY1VrM/edit?usp=sharing" target="_blank">Lihat Selengkapnya disini</a>
       <canvas id="genderChart"></canvas>
     </section>
 
     <section>
-      <h2>Diagram Batang Tahun ke Tahun</h2>
+      <h2>Total Responden Tiap Metode</h2>
       <canvas id="mentalHealthChart"></canvas>
     </section>
 
@@ -78,7 +79,7 @@
           <tr><td>Raka Ilhami Pradana</td><td>Siswa</td><td>6</td><td>86%</td></tr>
           <tr><td>Elga Syahira</td><td>Mahasiswa</td><td>5.5</td><td>79%</td></tr>
           <tr><td>Syifa Inas Luthfiya</td><td>Mahasiswa</td><td>5.5</td><td>79%</td></tr>
-          <tr><td>Gita Nuras Lestari</td><td>Mahasiswa</td><td>6.5</td><td>93%</td></tr>            
+          <tr><td>Gita Nuras Lestari</td><td>Mahasiswa</td><td>6.5</td><td>93%</td></tr>
         </tbody>
       </table>
       <a class="spreadsheet-link" href="https://docs.google.com/spreadsheets/d/11YtBXv7qLVzomkPYSp8DWYVfPZ8fSxn2z2ZuGAvi8XA/edit?usp=sharing" target="_blank">Lihat Selengkapnya di Spreadsheet</a>
@@ -87,6 +88,20 @@
     <section>
       <h2>User Experience Questionnaire – Likert 5 (6 Aspek)</h2>
       <canvas id="ueqChart"></canvas>
+      <table>
+        <thead>
+          <tr><th>Aspek UEQ</th><th>Skor Rata-rata</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Attractiveness</td><td>4.26</td></tr>
+          <tr><td>Perspicuity</td><td>4.09</td></tr>
+          <tr><td>Efficiency</td><td>4.01</td></tr>
+          <tr><td>Dependability</td><td>4.08</td></tr>
+          <tr><td>Stimulation</td><td>4.05</td></tr>
+          <tr><td>Novelty</td><td>4.03</td></tr>
+        </tbody>
+        <p>Berdasarkan hasil, seluruh aspek UEQ berada dalam kategori tinggi. Skor tertinggi pada aspek Attractiveness (4.26) menunjukkan bahwa tampilan antarmuka dianggap menarik. Aspek Perspicuity dan Dependability juga menonjol, mencerminkan kemudahan penggunaan dan kestabilan aplikasi. Meskipun Efficiency, Stimulation, dan Novelty sedikit lebih rendah, tetap menunjukkan penilaian positif. Secara keseluruhan, desain antarmuka dinilai telah memberikan pengalaman yang baik dan sesuai dengan kebutuhan pengguna.</p>
+      </table>
     </section>
 
     <section id="persona">
@@ -94,10 +109,14 @@
       <div class="persona-container">
         <img src="./img/Persona1.png" alt="Persona 1">
         <img src="./img/Persona2.png" alt="Persona 2">
-        <p>Persona berikut disusun berdasarkan hasil wawancara langsung dengan dua responden dari kategori siswa dan mahasiswa yang memiliki pengalaman nyata dalam menghadapi tantangan kesehatan mental. Proses wawancara dilakukan secara langsung di RSUD Cilegon sebagai bagian dari kegiatan penelitian eksploratif untuk memahami kebutuhan emosional dan preferensi pengguna dalam memanfaatkan aplikasi digital sebagai dukungan terhadap kesehatan mental.
-           Untuk menjaga privasi dan menjunjung tinggi etika penelitian, seluruh nama dan informasi identitas telah disamarkan menggunakan nama samaran, tanpa mengubah esensi dari pengalaman, tujuan, maupun tantangan yang disampaikan oleh responden.
-           persona ini digunakan sebagai dasar dalam merancang solusi desain yang empatik, kontekstual, dan relevan dengan kehidupan pengguna sebenarnya.</p>
+        <p>Persona berikut disusun berdasarkan hasil wawancara langsung dengan dua responden dari kategori siswa dan mahasiswa yang memiliki pengalaman nyata dalam menghadapi tantangan kesehatan mental. Proses wawancara dilakukan secara langsung di RSUD Cilegon sebagai bagian dari kegiatan penelitian eksploratif untuk memahami kebutuhan emosional dan preferensi pengguna dalam memanfaatkan aplikasi digital sebagai dukungan terhadap kesehatan mental. Untuk menjaga privasi dan menjunjung tinggi etika penelitian, seluruh nama dan informasi identitas telah disamarkan menggunakan nama samaran, tanpa mengubah esensi dari pengalaman, tujuan, maupun tantangan yang disampaikan oleh responden. Persona ini digunakan sebagai dasar dalam merancang solusi desain yang empatik, kontekstual, dan relevan dengan kehidupan pengguna sebenarnya.</p>
       </div>
+    </section>
+
+      <section>
+      <h2>Ekspektasi Pengguna (Mahasiswa IT)</h2>
+      <canvas id="expectedChart"></canvas>
+      <a class="spreadsheet-link" href="https://docs.google.com/spreadsheets/d/1MJ_tWXB2DSzhEyOmeX6sTqQ4R4EYMPOtBrrUy7tT9RA/edit?usp=sharing" target="_blank">Lihat Selengkapnya di Spreadsheet</a>
     </section>
 
     <section id="journey">
@@ -118,12 +137,23 @@
 
     <section id="insight">
       <h2>Key Findings & Insight</h2>
-      <p>Hasil menunjukkan pengalaman pengguna berada dalam rentang positif pada semua aspek UEQ dengan rata-rata di atas 4 dari skala 5.</p>
+      <p>Berdasarkan hasil evaluasi menggunakan metode User Experience Questionnaire (UEQ), seluruh aspek memperoleh skor rata-rata di atas 4 dari skala 5. Ini menunjukkan desain aplikasi cukup efektif dan diterima dengan baik oleh target remaja. Evaluasi melalui Cognitive Walkthrough menunjukkan mayoritas responden mampu menyelesaikan seluruh task dengan lancar.</p>
+      <ul>
+        <li>Remaja mengutamakan kemudahan navigasi dan tampilan visual yang tenang.</li>
+        <li>Fitur edukasi dan pelacakan mood menjadi daya tarik utama.</li>
+        <li>Perlindungan privasi dianggap sangat penting bagi pengguna remaja.</li>
+      </ul>
     </section>
 
     <section id="kesimpulan">
       <h2>Kesimpulan dan Next Steps</h2>
-      <p>Aplikasi menunjukkan potensi tinggi dalam membantu remaja mengakses edukasi dan informasi kesehatan mental. Langkah selanjutnya adalah pengujian lebih lanjut dan penyempurnaan desain berdasarkan masukan pengguna.</p>
+      <p>Desain aplikasi kesehatan mental remaja berbasis preventif telah berhasil dirancang menggunakan pendekatan Design Thinking dan dievaluasi melalui metode Cognitive Walkthrough. Hasilnya menunjukkan bahwa desain mampu memenuhi kebutuhan pengguna remaja, baik dari segi fungsionalitas maupun kenyamanan penggunaan.</p>
+      <h3>Saran:</h3>
+      <ul>
+        <li>Lakukan pengujian dengan sampel yang lebih luas untuk validasi lebih lanjut.</li>
+        <li>Perlu penambahan fitur interaktif seperti reminder dan konsultasi virtual.</li>
+        <li>Optimalkan desain untuk aksesibilitas pengguna dengan hambatan visual dan kognitif.</li>
+      </ul>
     </section>
 
   </main>
