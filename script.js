@@ -6,7 +6,7 @@ const genderChart = new Chart(ctxGender, {
     labels: ['Laki-Laki', 'Perempuan'],
     datasets: [{
       label: 'Distribusi Gender',
-      data: [48, 42],
+      data: [47, 43],
       backgroundColor: ['#42A5F5', '#EC407A'],
       borderRadius: 6
     }]
@@ -34,7 +34,7 @@ const mentalHealthChart = new Chart(ctxMental, {
     labels: ['UEQ (Likert 5)', 'Cognitive Walkthrough', 'UE - Mahasiswa IT'],
     datasets: [{
       label: 'Jumlah Responden',
-      data: [61, 77, 30],
+      data: [61, 90, 30],
       backgroundColor: '#2d9cdb',
       borderRadius: 6
     }]
